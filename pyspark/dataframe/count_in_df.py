@@ -14,5 +14,8 @@ num_rows = df.count()
 # Print number of rows
 print("Number of Rows:", num_rows)
 
+# for explore sparkUI
+# temp=input()
+
 # Stop SparkSession
 spark.stop()
