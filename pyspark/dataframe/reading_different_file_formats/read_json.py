@@ -1,8 +1,16 @@
 from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType ,StructField ,StringType ,IntegerType
 
 sc=SparkSession.builder.master("local").appName("Krishna").getOrCreate()
 
-json_df=sc.read.json("emp_data.json")
+schema=StructType([
+    StructField("age",IntegerType() ,True),
+    StructField("emp_id",StringType(),True),
+    StructField("name",StringType(),True)
+])
+
+
+json_df=sc.read.json("emp_data.json" , schema=schema)
 
 json_df.printSchema()
 
