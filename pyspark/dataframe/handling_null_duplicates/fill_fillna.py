@@ -14,12 +14,12 @@ schema =StructType([
     StructField("Cost Price Total (USD)",IntegerType(),True)
 ])
 
-read_df=spark.read.csv("inventory_records.csv",schema=schema)
+read_df=spark.read.csv("../../resource/inventory_records.csv",schema=schema)
 
 
 print("Original Data")
 new_df=read_df.fillna(value=0)
-new_df.show()
+new_df.show(40)
 
 
 print("Check which Opening_Stocks have Not-null value")
