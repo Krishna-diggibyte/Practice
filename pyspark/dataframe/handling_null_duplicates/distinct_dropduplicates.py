@@ -10,7 +10,7 @@ schema=StructType([
     StructField("age",IntegerType(),True)
 ])
 
-read_df=spark.read.schema(schema).option("header",True).csv("emp_data.csv")
+read_df=spark.read.schema(schema).option("header",True).csv("../../resource/emp_data.csv")
 
 read_df.show()
 
