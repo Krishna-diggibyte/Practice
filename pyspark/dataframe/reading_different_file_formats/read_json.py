@@ -10,13 +10,13 @@ schema=StructType([
 ])
 
 
-json_df=sc.read.json("emp_data.json" , schema=schema)
+json_df=sc.read.json("../../resource/emp_data.json" , schema=schema)
 
 json_df.printSchema()
 
 json_df.show()
 
-df_with_option = sc.read.option("header", True).json("emp_data.json")
+df_with_option = sc.read.option("header", True).json("../../resource/emp_data.json")
 
 df_with_option.printSchema()
 df_with_option.show()
