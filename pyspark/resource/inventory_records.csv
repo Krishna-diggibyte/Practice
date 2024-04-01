@@ -1,4 +1,4 @@
-﻿Product_id,Product_name,pening_Stocks,PurchaseStock in,Number of Units Sold,Hand-In-Stock,Cost Price Per Unit (USD),Cost Price Total (USD)
+﻿Product_id,Product_name,Opening_Stocks,PurchaseStock in,Number of Units Sold,Hand-In-Stock,Cost Price Per Unit (USD),Cost Price Total (USD)
 P101,Laptop,50,20,10,60,1200,72000
 P102,Monitor,,15,5,,500,25000
 P103,Keyboard,60,25,15,,50,3500
