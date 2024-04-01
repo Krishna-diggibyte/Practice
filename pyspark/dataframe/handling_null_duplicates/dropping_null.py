@@ -14,7 +14,7 @@ schema =StructType([
     StructField("Cost Price Total (USD)",IntegerType(),True)
 ])
 
-read_df=spark.read.csv("../../resource/inventory_records.csv",schema=schema)
+read_df=spark.read.csv("../../resource/inventory_records.csv",schema=schema,header=True)
 
 # read_df.printSchema()
 
@@ -26,6 +26,11 @@ read_df.na.drop().show()
 
 print("If all row is null like P104")
 read_df.na.drop(how="all").show(truncate=False)
+
+print("check non null values by threshold")
+read_df.na.drop(how="any",thresh=7).show(truncate=False)
+
+
 
 print("If null in Opening Stocks")
 read_df.na.drop(subset=["Opening_Stocks"]).show(truncate=False)
