@@ -16,7 +16,7 @@ schema =StructType([
     StructField("Cost Price Total (USD)",IntegerType(),True)
 ])
 
-read_df=spark.read.csv("inventory_records.csv",schema=schema)
+read_df=spark.read.csv("../../resource/inventory_records.csv",schema=schema)
 
 
 print("Original Data")
