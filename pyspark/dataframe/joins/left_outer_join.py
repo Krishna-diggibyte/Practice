@@ -26,4 +26,5 @@ deptDF = sc.createDataFrame(data=dept, schema = deptColumns)
 
 # left outer join
 
+# left , leftouter
 empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"leftouter").show(truncate=False)
