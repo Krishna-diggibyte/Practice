@@ -26,4 +26,5 @@ deptDF = sc.createDataFrame(data=dept, schema = deptColumns)
 
 # full join
 
+# "full" , outer , fullouter
 empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"full").show(truncate=False)
