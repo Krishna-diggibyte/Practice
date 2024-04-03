@@ -1,0 +1,30 @@
+[
+ {
+ "name": "Krishna",
+ "age": 25,
+ "phone_numbers": ["+1111111111", "+2222222222"],
+ "is_student": true,
+ "timestamp": 1642435200000
+ },
+ {
+ "name": "Kuldeep",
+ "age": 35,
+ "phone_numbers": [],
+ "is_student": false,
+ "timestamp": 1642521600000
+ },
+ {
+ "name": "Basheer",
+ "age": 28,
+ "phone_numbers": null,
+ "is_student": true,
+ "timestamp": 1642608000000
+ },
+ {
+ "name": "Pratibha",
+ "age": 23,
+ "phone_numbers": [],
+ "is_student": true,
+ "timestamp": 1346608000000
+ }
+]
