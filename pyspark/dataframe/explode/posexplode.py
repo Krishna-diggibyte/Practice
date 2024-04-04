@@ -18,9 +18,9 @@ read_df.show()
 read_df.printSchema()
 
 print("using posexplode")
-# using explode
+# using posexplode
 read_df.select(read_df.age,read_df.is_student,read_df.name,posexplode(read_df.phone_numbers),read_df.timestamp).show()
 
 print("using posexplode_outer")
-# Using explode_outer
+# Using posexplode_outer
 read_df.select(read_df.age,read_df.is_student,read_df.name,posexplode_outer(read_df.phone_numbers),read_df.timestamp).show()
